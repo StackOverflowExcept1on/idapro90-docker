@@ -20,6 +20,6 @@ docker build --tag stackoverflowexcept1on/idapro .
 ```bash
 mkdir -p demo && cd demo
 cp /bin/cat .
-docker run --rm --it -v $(pwd):/files stackoverflowexcept1on/idapro -P+ -B /files/cat
+docker run --rm -it -v $(pwd):/files stackoverflowexcept1on/idapro -P+ -B /files/cat
 ls cat.i64
 ```
